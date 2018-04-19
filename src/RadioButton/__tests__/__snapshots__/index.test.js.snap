@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default RadioButton Should match snapshot 1`] = `
+<label
+  className="jsx-502185451"
+  htmlFor="button"
+>
+  <input
+    checked={false}
+    className="jsx-502185451"
+    disabled={false}
+    id="button"
+    name="radio"
+    onChange={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+      }
+    }
+    type="radio"
+    value="button"
+  />
+  <span
+    className="jsx-502185451 radioBox"
+  >
+    <span
+      className="jsx-502185451 glyph"
+    />
+  </span>
+  <span
+    className="jsx-502185451 labelText"
+  >
+    RadioButton
+  </span>
+  <JSXStyle
+    css="label.__jsx-style-dynamic-selector{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:20px;opacity:1;cursor:pointer;position:relative;}input[type=\\"radio\\"].__jsx-style-dynamic-selector{visibility:hidden;display:none;}.radioBox.__jsx-style-dynamic-selector{position:relative;box-sizing:border-box;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;background-color:#fff;height:20px;width:20px;border-radius:50%;overflow:hidden;border:1px solid #bac7d5;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);-webkit-transition:all 0.2s linear;transition:all 0.2s linear;}.radioBox.__jsx-style-dynamic-selector .glyph.__jsx-style-dynamic-selector{visibility:hidden;height:12px;width:12px;border-radius:50%;background-color:#00a991;}input[type=\\"radio\\"].__jsx-style-dynamic-selector:checked+.radioBox.__jsx-style-dynamic-selector .glyph.__jsx-style-dynamic-selector{visibility:visible;}label.__jsx-style-dynamic-selector:focus{outline-width:0;}label.__jsx-style-dynamic-selector:focus .radioBox.__jsx-style-dynamic-selector{outline-width:0;box-shadow:0 0 3px rgb(77,144,254);}label.__jsx-style-dynamic-selector:hover .radioBox.__jsx-style-dynamic-selector{border-color:#aabacb;}.labelText.__jsx-style-dynamic-selector{font-family:\\"Roboto\\", -apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", \\"Segoe UI\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", sans-serif;font-weight:400;font-size:14px;color:#46515e;margin-left:8px;}input[type=\\"radio\\"].__jsx-style-dynamic-selector:checked~.labelText.__jsx-style-dynamic-selector{font-weight:500;}label.__jsx-style-dynamic-selector:active .radioBox.__jsx-style-dynamic-selector{border-color:#9aadc2;transform: scale(0.9);}"
+    dynamic={
+      Array [
+        "20px",
+        "1",
+        "pointer",
+        "#fff",
+        "20px",
+        "20px",
+        "50%",
+        "#bac7d5",
+        "0.2s",
+        12,
+        12,
+        "50%",
+        "#00a991",
+        "#aabacb",
+        "\\"Roboto\\", -apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", \\"Segoe UI\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", sans-serif",
+        "400",
+        "14px",
+        "#46515e",
+        "8px",
+        "500",
+        "#9aadc2",
+        "transform: scale(0.9)",
+      ]
+    }
+    styleId="4000472932"
+  />
+</label>
+`;

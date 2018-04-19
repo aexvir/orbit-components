@@ -15,5 +15,6 @@ export { default as SystemMessage } from "./SystemMessage";
 export { default as FieldFeedback } from "./FieldFeedback";
 export { default as Typography } from "./Typography";
 export { default as Radio } from "./Radio";
+export { default as RadioButton } from "./RadioButton";
 export { default as ThemeProvider } from "./Theming/ThemeProvider";
 export { Icons, defaultTheme, withTheme };
