@@ -1,58 +1,117 @@
 // @flow
 
 import * as React from "react";
+import { darken } from "polished";
+import * as tokens from "orbit-design-token";
 
-import Typography from "../Typography";
-import Icon from "./Icon";
+import { Check } from "../icons";
 
 type Props = {
   label: string,
-  checked?: boolean,
-  value?: string,
-  onChange: (SyntheticInputEvent<HTMLInputElement>) => any,
+  name: string,
+  value: string,
+  error: boolean,
+  disabled: boolean,
+  checked: boolean,
+  onChange: (SyntheticEvent<HTMLInputElement>) => any,
 };
 
-const Checkbox = (props: Props) => (
-  <div>
-    <label className="label">
-      <div className="checkbox">
-        {props.checked && (
-          <div className="checked">
-            <Icon.Checked />
-          </div>
-        )}
-      </div>
-      <Typography variant={props.checked ? "bold" : "normal"}>{props.label}</Typography>
-      <input
-        className="checkboxInput"
-        type="checkbox"
-        checked={props.checked}
-        onChange={props.onChange}
-        value={props.value}
-      />
-    </label>
-    <style jsx>{`
-      .label {
-        display: flex;
-        align-items: center;
-      }
-      .checkbox {
-        width: 20px;
-        height: 20px;
-        margin-right: 8px;
-        border-radius: 3px;
-        background-color: white;
-        box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.16);
-        border: solid 1px #bac7d5;
-      }
-      .checked {
-        margin-left: 5px;
-      }
-      .checkboxInput {
-        display: none;
-      }
-    `}</style>
-  </div>
-);
+const CheckBox = (props: Props) => {
+  const { label, name, value, error, disabled, checked, onChange } = props;
 
-export default Checkbox;
+  const borderColor =
+    error && !disabled && !checked ? tokens.borderColorInputError : tokens.borderColorInput;
+  const iconColor = disabled ? tokens.colorIconCheckboxDisabled : tokens.colorIconCheckbox;
+
+  return (
+    <label htmlFor={name}>
+      <input
+        id={name}
+        value={value || ""}
+        type="checkbox"
+        name={name}
+        disabled={disabled}
+        checked={checked}
+        onChange={onChange}
+      />
+      <span className="checkBox">
+        <span className="glyph">
+          <Check size="16px" color={iconColor} className="CheckIcon" />
+        </span>
+      </span>
+      <span className="labelText">{label}</span>
+      <style jsx>{`
+        label {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          height: ${tokens.heightCheckbox};
+          opacity: ${disabled ? tokens.opacityCheckboxDisabled : "1"};
+          cursor: ${disabled ? "default" : "pointer"};
+          position: relative;
+        }
+        input[type="checkbox"] {
+          visibility: hidden;
+          display: none;
+        }
+        .checkBox {
+          position: relative;
+          box-sizing: border-box;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: ${tokens.backgroundInput};
+          height: ${tokens.heightCheckbox};
+          width: ${tokens.widthCheckbox};
+          border-radius: ${tokens.borderRadiusNormal};
+          overflow: hidden;
+          border: 1px solid ${borderColor};
+          transform: scale(1);
+          transition: all ${tokens.durationFast} linear;
+        }
+        .checkBox .glyph {
+          visibility: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        input[type="checkbox"]:checked + .checkBox .glyph {
+          visibility: visible;
+        }
+
+        label:hover .checkBox {
+          border-color: ${!disabled
+            ? tokens.borderColorInput
+            : darken(tokens.modifierDarkenHover, tokens.borderColorInput)};
+        }
+        .labelText {
+          font-family: ${tokens.fontFamily};
+          font-weight: ${tokens.fontWeightNormal};
+          font-size: ${tokens.fontSizeLabelForm};
+          color: ${tokens.colorLabelForm};
+          margin-left: ${tokens.spaceXSmall};
+        }
+        input[type="checkbox"]:checked ~ .labelText {
+          font-weight: ${tokens.fontWeightMedium};
+        }
+        label:active .checkBox {
+          border-color: ${disabled
+            ? borderColor
+            : darken(tokens.modifierDarkenActive, tokens.borderColorInput)};
+          ${!disabled ? `transform: scale(${tokens.modifierScaleButtonActive})` : ""};
+        }
+        label:focus {
+          outline-width: 3px;
+        }
+      `}</style>
+    </label>
+  );
+};
+
+CheckBox.defaultProps = {
+  error: false,
+  disabled: false,
+  checked: false,
+};
+
+export default CheckBox;

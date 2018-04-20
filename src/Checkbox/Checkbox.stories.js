@@ -1,36 +1,47 @@
 // @flow
 
-import React from "react";
+import * as React from "react";
 import { storiesOf, setAddon } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import chaptersAddon from "react-storybook-addon-chapters";
 import { withKnobs, text, boolean } from "@storybook/addon-knobs/react";
 
-import Checkbox from "./index";
+import CheckBox from "./index";
 
 setAddon(chaptersAddon);
 
 const options = {
-  showSource: false,
-  allowSourceToggling: true,
-  showPropTables: false,
+  allowSourceToggling: false,
   allowPropTablesToggling: false,
 };
 
-storiesOf("Checkbox", module)
+storiesOf("CheckBox", module)
   .addDecorator(withKnobs)
-  .addWithChapters("default", () => {
-    const isChecked = boolean("isChecked", false);
-    const label = text("Label", "Text label");
-
+  .addWithChapters("Default", () => {
+    const label = text("Label", "Hello Button");
+    const name = text("Name", "name");
+    const value = text("Value", "");
+    const checked = boolean("Checked", true);
+    const disabled = boolean("Disabled", false);
+    const error = boolean("Error", false);
     return {
-      info: "You can change props in knobs",
+      info: "Example of CheckBox. You can change its label, name, value.",
+
       chapters: [
         {
           sections: [
             {
+              subtitle: "Checkbox",
               sectionFn: () => (
-                <Checkbox label={label} checked={isChecked} onChange={action("changed")} />
+                <CheckBox
+                  label={label}
+                  name={name}
+                  value={value}
+                  checked={checked}
+                  disabled={disabled}
+                  error={error}
+                  onChange={action("changed")}
+                />
               ),
               options,
             },
