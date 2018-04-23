@@ -18,9 +18,9 @@ const options = {
 storiesOf("CheckBox", module)
   .addDecorator(withKnobs)
   .addWithChapters("Default", () => {
-    const label = text("Label", "Hello Button");
-    const name = text("Name", "name");
-    const value = text("Value", "");
+    const label = text("Label", "Option");
+    const name = text("Name", "options");
+    const value = text("Value", "option_1");
     const checked = boolean("Checked", true);
     const disabled = boolean("Disabled", false);
     const error = boolean("Error", false);

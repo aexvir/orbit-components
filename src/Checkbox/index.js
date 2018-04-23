@@ -27,7 +27,7 @@ const CheckBox = (props: Props) => {
     <label htmlFor={name}>
       <input
         id={name}
-        value={value || ""}
+        value={value}
         type="checkbox"
         name={name}
         disabled={disabled}

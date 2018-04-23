@@ -24,7 +24,7 @@ values.map(value =>
     it("Input should not contain a disabled prop", () => {
       expect(component.find(`input[type="checkbox"]`).prop("disabled")).toBe(false);
     });
-    it("Should not execute onChange method", () => {
+    it("Should execute onChange method", () => {
       component.find("input").simulate("change");
       expect(onChange).toHaveBeenCalled();
     });
