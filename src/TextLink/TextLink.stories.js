@@ -7,6 +7,8 @@ import styles from "@sambego/storybook-styles";
 import chaptersAddon from "react-storybook-addon-chapters";
 import { withKnobs, text, boolean, select } from "@storybook/addon-knobs/react";
 
+import ThemeProvider from "../Theming/ThemeProvider";
+
 import TextLink from "./index";
 
 setAddon(chaptersAddon);
@@ -25,17 +27,7 @@ storiesOf("TextLink", module)
   )
   .addWithChapters("Primary link", () => {
     const url = text("URL", "https://kiwi.com");
-
-    const size = select(
-      "Size",
-      {
-        small: "small",
-        normal: "normal",
-        large: "large",
-      },
-      "normal",
-    );
-    const newTab = boolean("New tab", false);
+    const external = boolean("External", false);
     const title = text("Title", "Primary link");
 
     return {
@@ -46,15 +38,16 @@ storiesOf("TextLink", module)
           sections: [
             {
               sectionFn: () => (
-                <TextLink
-                  newTab={newTab}
-                  onClick={action("clicked")}
-                  url={url}
-                  type="primary"
-                  size={size}
-                >
-                  {title}
-                </TextLink>
+                <ThemeProvider>
+                  <TextLink
+                    external={external}
+                    onClick={action("clicked")}
+                    url={url}
+                    type="primary"
+                  >
+                    {title}
+                  </TextLink>
+                </ThemeProvider>
               ),
               options,
             },
@@ -65,17 +58,7 @@ storiesOf("TextLink", module)
   })
   .addWithChapters("Secondary link", () => {
     const url = text("URL", "https://kiwi.com");
-
-    const size = select(
-      "Size",
-      {
-        small: "small",
-        normal: "normal",
-        large: "large",
-      },
-      "normal",
-    );
-    const newTab = boolean("New tab", false);
+    const external = boolean("External", false);
     const title = text("Title", "Secondary link");
 
     return {
@@ -86,15 +69,16 @@ storiesOf("TextLink", module)
           sections: [
             {
               sectionFn: () => (
-                <TextLink
-                  newTab={newTab}
-                  onClick={action("clicked")}
-                  url={url}
-                  type="secondary"
-                  size={size}
-                >
-                  {title}
-                </TextLink>
+                <ThemeProvider>
+                  <TextLink
+                    external={external}
+                    onClick={action("clicked")}
+                    url={url}
+                    type="secondary"
+                  >
+                    {title}
+                  </TextLink>
+                </ThemeProvider>
               ),
               options,
             },
@@ -105,16 +89,6 @@ storiesOf("TextLink", module)
   })
   .addWithChapters("Playground", () => {
     const url = text("URL", "https://kiwi.com");
-
-    const size = select(
-      "Size",
-      {
-        small: "small",
-        normal: "normal",
-        large: "large",
-      },
-      "normal",
-    );
     const type = select(
       "Type",
       {
@@ -123,8 +97,9 @@ storiesOf("TextLink", module)
       },
       "primary",
     );
-    const newTab = boolean("New tab", true);
+    const external = boolean("External", true);
     const title = text("Text", "Custom link");
+    const rel = text("Rel");
     return {
       info:
         "You can try all possible configurations of this component. However, check Orbit.Kiwi for more detailed design guidelines.",
@@ -133,15 +108,17 @@ storiesOf("TextLink", module)
           sections: [
             {
               sectionFn: () => (
-                <TextLink
-                  newTab={newTab}
-                  onClick={action("clicked")}
-                  url={url}
-                  type={type}
-                  size={size}
-                >
-                  {title}
-                </TextLink>
+                <ThemeProvider>
+                  <TextLink
+                    external={external}
+                    onClick={action("clicked")}
+                    url={url}
+                    type={type}
+                    rel={rel}
+                  >
+                    {title}
+                  </TextLink>
+                </ThemeProvider>
               ),
               options,
             },

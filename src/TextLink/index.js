@@ -1,63 +1,77 @@
 // @flow
 import * as React from "react";
-import * as tokens from "@kiwicom/orbit-design-tokens";
-
-const colorTextLink = {
-  primary: tokens.colorLinkPrimary,
-  secondary: tokens.colorLinkSecondary,
-};
-const fontSizeTextLink = {
-  small: tokens.fontSizeTextSmall,
-  normal: tokens.fontSizeTextNormal,
-  large: tokens.fontSizeTextLarge,
-};
+import defaultTokens from "@kiwicom/orbit-design-tokens";
+import styled from "styled-components";
+import { withTheme } from "theming";
 
 type Props = {
   children: React.Node,
   url: string,
   onClick: (SyntheticEvent<HTMLLinkElement>) => any,
-  newTab: boolean,
-  type: $Keys<typeof colorTextLink>,
-  size: $Keys<typeof fontSizeTextLink>,
+  external: boolean,
+  type: "primary" | "secondary",
+  rel?:
+    | "alternate"
+    | "author"
+    | "bookmark"
+    | "external"
+    | "help"
+    | "license"
+    | "next"
+    | "nofollow"
+    | "noreferrer"
+    | "noopener"
+    | "prev"
+    | "search"
+    | "tag",
+  theme: typeof defaultTokens,
 };
 
+const StyledTextLink = styled(({ tokens, theme, type, url, ...props }) => (
+  <a {...props}>{props.children}</a>
+))`
+      color: ${props => props.tokens.colorTextLink[props.type]};
+      font-weight: ${props => props.theme.fontWeightLinks}; 
+      text-decoration: ${props =>
+        props.type === "secondary"
+          ? props.theme.textDecorationLinkSecondary
+          : props.theme.textDecorationLinkPrimary};
+      cursor: pointer;
+      transition: color ${props => props.theme.durationFast} ease-in-out;
+    }
+    &:hover {
+      text-decoration: ${props =>
+        props.type === "secondary"
+          ? props.theme.textDecorationLinkSecondaryHover
+          : props.theme.textDecorationLinkPrimaryHover};
+      color: ${props => props.theme.colorLinkPrimaryHover};
+    }
+    &:focus {
+      outline-width: 3px;
+    }        
+  `;
+
 const TextLink = (props: Props) => {
-  const { children, url, onClick, newTab, type, size } = props;
+  const { children, url, external, theme } = props;
+  const tokens = {
+    colorTextLink: {
+      primary: theme.colorLinkPrimary,
+      secondary: theme.colorLinkSecondary,
+    },
+  };
 
   return (
-    <a href={url} target={newTab ? "_blank" : undefined} onClick={onClick}>
+    <StyledTextLink href={url} target={external ? "_blank" : undefined} tokens={tokens} {...props}>
       {children}
-      <style jsx>{`
-        a {
-          font-size: ${fontSizeTextLink[size]};
-          color: ${colorTextLink[type]};
-          font-weight: ${tokens.fontWeightLinks};
-          text-decoration: ${type === "secondary"
-            ? tokens.textDecorationLinkSecondary
-            : tokens.textDecorationLinkPrimary};
-          cursor: pointer;
-        }
-        a:hover {
-          text-decoration: ${type === "secondary"
-            ? tokens.textDecorationLinkSecondaryHover
-            : tokens.textDecorationLinkPrimaryHover};
-          color: ${tokens.colorLinkPrimaryHover};
-        }
-        a:visited {
-          //nothing needs to be here, but this state will be used in the future probably
-        }
-        a:focus {
-          outline-width: 3px;
-        }
-      `}</style>
-    </a>
+    </StyledTextLink>
   );
 };
 
-TextLink.defaultProps = {
+const TextLinkWithTheme = withTheme(TextLink);
+TextLinkWithTheme.displayName = "TextLink";
+TextLinkWithTheme.defaultProps = {
   type: "primary",
-  size: "normal",
-  newTab: false,
+  external: false,
 };
 
-export default TextLink;
+export default TextLinkWithTheme;
