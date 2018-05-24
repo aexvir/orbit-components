@@ -1,79 +1,67 @@
 // @flow
 import * as React from "react";
-import * as tokens from "@kiwicom/orbit-design-tokens";
-
-const colorText = {
-  primary: tokens.colorTextPrimary,
-  secondary: tokens.colorTextSecondary,
-  attention: tokens.colorTextAttention,
-};
-
-const weightText = {
-  regular: tokens.fontWeightNormal,
-  bold: tokens.fontWeightBold,
-};
-
-const sizeText = {
-  large: tokens.fontSizeTextLarge,
-  normal: tokens.fontSizeTextNormal,
-  small: tokens.fontSizeTextSmall,
-};
+import defaultTokens from "@kiwicom/orbit-design-tokens";
+import styled from "styled-components";
+import { withTheme } from "theming";
+import createComponentFromTagProp from "react-create-component-from-tag-prop";
 
 type Props = {
-  type: $Keys<typeof colorText>,
-  size: $Keys<typeof sizeText>,
-  weight: $Keys<typeof weightText>,
+  type: "primary" | "secondary" | "attention",
+  size: "small" | "normal" | "large",
+  weight: "regular" | "bold",
   align: "left" | "center" | "right",
   italic: boolean,
   uppercase: boolean,
   element: "p" | "span" | "div",
   children: React.Node,
-  className?: string,
+  theme: typeof defaultTokens,
 };
 
-function resolveScopedStyles(scope) {
-  return {
-    className: scope.props.className,
-    styles: scope.props.children,
-  };
-}
+const TextElement = createComponentFromTagProp({
+  prop: "element",
+  propsToOmit: ["tokens", "theme", "type", "weight", "align"],
+});
+
+const StyledText = styled(TextElement)`
+  font-family: ${props => props.theme.fontFamily};
+  font-size: ${props => props.tokens.sizeText[props.size]};
+  font-weight: ${props => props.tokens.weightText[props.weight]};
+  color: ${props => props.tokens.colorText[props.type]};
+  line-height: ${props => props.theme.lineHeightText};
+  text-align: ${props => props.align};
+  text-transform: ${props => props.uppercase && `uppercase`};
+  font-style: ${props => props.italic && `italic`};
+  margin: 0;
+`;
 
 const Text = (props: Props) => {
-  const { type, size, weight, align, italic, uppercase, element, children, className } = props;
-
-  const scoped = resolveScopedStyles(
-    <scope>
-      <style jsx>
-        {`
-          font-family: ${tokens.fontFamily};
-          font-size: ${sizeText[size]};
-          font-weight: ${weightText[weight]};
-          color: ${colorText[type]};
-          line-height: ${tokens.lineHeightText};
-          text-align: ${align};
-          ${uppercase ? `text-transform: uppercase` : ""};
-          ${italic ? `font-style: italic` : ""};
-          margin: 0;
-        `}
-      </style>
-    </scope>,
-  );
-
+  const { children, theme } = props;
+  const tokens = {
+    colorText: {
+      primary: theme.colorTextPrimary,
+      secondary: theme.colorTextSecondary,
+      attention: theme.colorTextAttention,
+    },
+    weightText: {
+      regular: theme.fontWeightNormal,
+      bold: theme.fontWeightBold,
+    },
+    sizeText: {
+      large: theme.fontSizeTextLarge,
+      normal: theme.fontSizeTextNormal,
+      small: theme.fontSizeTextSmall,
+    },
+  };
   return (
-    <React.Fragment>
-      {React.createElement(
-        element,
-        {
-          className: [scoped.className, className].join(" "),
-        },
-        children,
-      )}
-      {scoped.styles}
-    </React.Fragment>
+    <StyledText tokens={tokens} {...props}>
+      {children}
+    </StyledText>
   );
 };
 
-Text.defaultProps = {
+const TextWithTheme = withTheme(Text);
+TextWithTheme.displayName = "Text";
+TextWithTheme.defaultProps = {
   type: "primary",
   size: "normal",
   weight: "regular",
@@ -83,4 +71,4 @@ Text.defaultProps = {
   italic: false,
 };
 
-export default Text;
+export default TextWithTheme;

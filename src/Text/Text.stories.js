@@ -5,6 +5,8 @@ import styles from "@sambego/storybook-styles";
 import chaptersAddon from "react-storybook-addon-chapters";
 import { withKnobs, text, boolean, select } from "@storybook/addon-knobs/react";
 
+import ThemeProvider from "../Theming/ThemeProvider";
+
 import Text from "./index";
 
 setAddon(chaptersAddon);
@@ -35,7 +37,11 @@ storiesOf("Text", module)
         {
           sections: [
             {
-              sectionFn: () => <Text>{customText}</Text>,
+              sectionFn: () => (
+                <ThemeProvider>
+                  <Text>{customText}</Text>
+                </ThemeProvider>
+              ),
               options,
             },
           ],
@@ -57,7 +63,11 @@ storiesOf("Text", module)
         {
           sections: [
             {
-              sectionFn: () => <Text type="secondary">{customText}</Text>,
+              sectionFn: () => (
+                <ThemeProvider>
+                  <Text type="secondary">{customText}</Text>
+                </ThemeProvider>
+              ),
               options,
             },
           ],
@@ -79,7 +89,11 @@ storiesOf("Text", module)
         {
           sections: [
             {
-              sectionFn: () => <Text type="attention">{customText}</Text>,
+              sectionFn: () => (
+                <ThemeProvider>
+                  <Text type="attention">{customText}</Text>
+                </ThemeProvider>
+              ),
               options,
             },
           ],
@@ -146,17 +160,19 @@ storiesOf("Text", module)
           sections: [
             {
               sectionFn: () => (
-                <Text
-                  type={type}
-                  element={element}
-                  size={size}
-                  weight={weight}
-                  align={align}
-                  uppercase={boolean("Uppercase", false)}
-                  italic={boolean("Italic", false)}
-                >
-                  {customText}
-                </Text>
+                <ThemeProvider>
+                  <Text
+                    type={type}
+                    element={element}
+                    size={size}
+                    weight={weight}
+                    align={align}
+                    uppercase={boolean("Uppercase", false)}
+                    italic={boolean("Italic", false)}
+                  >
+                    {customText}
+                  </Text>
+                </ThemeProvider>
               ),
               options,
             },
