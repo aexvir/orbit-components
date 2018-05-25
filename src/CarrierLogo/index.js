@@ -25,57 +25,18 @@ const StyledCarrierLogo = styled.div`
       ? `${props.theme.widthIconLarge}`
       : `${props.tokens.renderSizes[props.size]}px`};
   display: flex;
-  flex-direction: row;
+  flex-direction: ${props => (props.carriers.length > 1 ? "column" : "row")};
   flex-wrap: wrap;
-  position: relative;
+  align-content: space-between;
+  justify-content: space-between;
 `;
 const StyledImage = styled.img`
   height: ${props => props.imageSize}px;
   width: ${props => props.imageSize}px;
   border-radius: ${props => props.theme.borderRadiusNormal};
   background-color: ${props => props.theme.backgroundCarrierLogo};
-  position: absolute;
-  /* one item */
-  &:first-child:nth-last-child(1) {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  /* two items */
   &:first-child:nth-last-child(2) ~ &:last-child {
-    bottom: 0;
-    right: 0;
-  }
-  /* three items */
-  &:first-child:nth-last-child(3),
-  &:first-child:nth-last-child(3) ~ & {
-    width: ${props => props.tokens.renderSizes.small - 1}px;
-    height: ${props => props.tokens.renderSizes.small - 1}px;
-  }
-  &:first-child:nth-last-child(3) ~ &:nth-child(2) {
-    top: 0;
-    right: 0;
-  }
-  &:first-child:nth-last-child(3) ~ &:nth-child(3) {
-    left: 0;
-    bottom: 0;
-  }
-  /* four items */
-  &:first-child:nth-last-child(4),
-  &:first-child:nth-last-child(4) ~ & {
-    width: ${props => props.tokens.renderSizes.small - 1}px;
-    height: ${props => props.tokens.renderSizes.small - 1}px;
-  }
-  &:first-child:nth-last-child(4) ~ &:nth-child(2) {
-    top: 0;
-    right: 0;
-  }
-  &:first-child:nth-last-child(4) ~ &:nth-child(3) {
-    bottom: 0;
-    left: 0;
-  }
-  &:first-child:nth-last-child(4) ~ &:nth-child(4) {
-    bottom: 0;
-    right: 0;
+    align-self: flex-end;
   }
 `;
 
@@ -114,7 +75,7 @@ const CarrierLogo = (props: Props) => {
             srcSet={`${baseURL}/airlines/${srcSetSize}/${carrierImage.code}.png 2x`}
             alt={carrierImage.name}
             title={carrierImage.name}
-            imageSize={imageSize}
+            imageSize={imageSize - (carriers.length > 2 ? 1 : 0)}
             tokens={tokens}
             {...props}
           />

@@ -1,6 +1,6 @@
 // @flow
 import * as React from "react";
-import { mount } from "enzyme";
+import { shallow } from "enzyme";
 
 import CarrierLogo from "../index";
 import ThemeProvider from "../../Theming/ThemeProvider";
@@ -15,22 +15,28 @@ const carriers = [
 const sizes = ["small", "medium", "large"];
 
 describe("Multiple CarrierLogo with DefaultProp", () => {
-  const component = mount(
+  const component = shallow(
     <ThemeProvider>
       <CarrierLogo carriers={carriers} />
     </ThemeProvider>,
   );
+  // console.log(component.render().find("div"));
   carriers.map(carrier =>
     it("should contain an image of carrier", () => {
-      expect(component.find(`img[alt="${carrier.name}"]`).prop("alt")).toBe(carrier.name);
+      expect(
+        component
+          .render()
+          .find(`img[alt="${carrier.name}"]`)
+          .prop("alt"),
+      ).toBe(carrier.name);
     }),
   );
-  // it("should have set size", () => {
-  //   expect(component.prop("size")).toBe("large");
-  // });
-  it("should contain a div", () => {
-    expect(component.find("div").exists()).toBe(true);
+  it("should have set size", () => {
+    expect(component.find("CarrierLogo").prop("size")).toBe("large");
   });
+  /*  it("should contain a div", () => {
+    expect(component.find("div").exists()).toBe(true);
+  }); */
   it("should match snapshot", () => {
     expect(component).toMatchSnapshot();
   });
@@ -39,17 +45,22 @@ describe("Multiple CarrierLogo with DefaultProp", () => {
 carriers.map(carrier =>
   sizes.map(size =>
     describe(`Single carrier with name: ${carrier.name} and code: ${carrier.code}`, () => {
-      const component = mount(
+      const component = shallow(
         <ThemeProvider>
           <CarrierLogo carriers={[carrier]} size={size} />
         </ThemeProvider>,
       );
       it("should contain an image of carrier", () => {
-        expect(component.find(`img[alt="${carrier.name}"]`).prop("alt")).toBe(carrier.name);
+        expect(
+          component
+            .render()
+            .find(`img[alt="${carrier.name}"]`)
+            .prop("alt"),
+        ).toBe(carrier.name);
       });
-      it("should contain a div", () => {
+      /* it("should contain a div", () => {
         expect(component.find("div").exists()).toBe(true);
-      });
+      }); */
       it("should match snapshot", () => {
         expect(component).toMatchSnapshot();
       });

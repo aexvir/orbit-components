@@ -99,12 +99,12 @@ exports[`Storyshots CarrierLogo Four carriers 1`] = `
           }
         >
           <div
-            className="CarrierLogo__StyledCarrierLogo-ieqjqT fbkNwD"
+            className="CarrierLogo__StyledCarrierLogo-ieqjqT kdHNuo"
             size="large"
           >
             <img
               alt="Ryanair"
-              className="CarrierLogo__StyledImage-fRYacf flhyId"
+              className="CarrierLogo__StyledImage-fRYacf fVxKRf"
               size="large"
               src="//images.kiwi.com/airlines/16/FR.png"
               srcSet="//images.kiwi.com/airlines/32/FR.png 2x"
@@ -112,7 +112,7 @@ exports[`Storyshots CarrierLogo Four carriers 1`] = `
             />
             <img
               alt="Transavia France"
-              className="CarrierLogo__StyledImage-fRYacf flhyId"
+              className="CarrierLogo__StyledImage-fRYacf fVxKRf"
               size="large"
               src="//images.kiwi.com/airlines/16/TO.png"
               srcSet="//images.kiwi.com/airlines/32/TO.png 2x"
@@ -120,7 +120,7 @@ exports[`Storyshots CarrierLogo Four carriers 1`] = `
             />
             <img
               alt="Vueling"
-              className="CarrierLogo__StyledImage-fRYacf flhyId"
+              className="CarrierLogo__StyledImage-fRYacf fVxKRf"
               size="large"
               src="//images.kiwi.com/airlines/16/VY.png"
               srcSet="//images.kiwi.com/airlines/32/VY.png 2x"
@@ -128,7 +128,7 @@ exports[`Storyshots CarrierLogo Four carriers 1`] = `
             />
             <img
               alt="Czech Airlines"
-              className="CarrierLogo__StyledImage-fRYacf flhyId"
+              className="CarrierLogo__StyledImage-fRYacf fVxKRf"
               size="large"
               src="//images.kiwi.com/airlines/16/OK.png"
               srcSet="//images.kiwi.com/airlines/32/OK.png 2x"
@@ -573,12 +573,12 @@ exports[`Storyshots CarrierLogo One carrier 1`] = `
           }
         >
           <div
-            className="CarrierLogo__StyledCarrierLogo-ieqjqT fbkNwD"
+            className="CarrierLogo__StyledCarrierLogo-ieqjqT fPUjyY"
             size="large"
           >
             <img
               alt="Ryanair"
-              className="CarrierLogo__StyledImage-fRYacf cYWhRr"
+              className="CarrierLogo__StyledImage-fRYacf gKTWFQ"
               size="large"
               src="//images.kiwi.com/airlines/32/FR.png"
               srcSet="//images.kiwi.com/airlines/64/FR.png 2x"
@@ -901,12 +901,12 @@ exports[`Storyshots CarrierLogo Three carriers 1`] = `
           }
         >
           <div
-            className="CarrierLogo__StyledCarrierLogo-ieqjqT fbkNwD"
+            className="CarrierLogo__StyledCarrierLogo-ieqjqT kdHNuo"
             size="large"
           >
             <img
               alt="Ryanair"
-              className="CarrierLogo__StyledImage-fRYacf flhyId"
+              className="CarrierLogo__StyledImage-fRYacf fVxKRf"
               size="large"
               src="//images.kiwi.com/airlines/16/FR.png"
               srcSet="//images.kiwi.com/airlines/32/FR.png 2x"
@@ -914,7 +914,7 @@ exports[`Storyshots CarrierLogo Three carriers 1`] = `
             />
             <img
               alt="Transavia France"
-              className="CarrierLogo__StyledImage-fRYacf flhyId"
+              className="CarrierLogo__StyledImage-fRYacf fVxKRf"
               size="large"
               src="//images.kiwi.com/airlines/16/TO.png"
               srcSet="//images.kiwi.com/airlines/32/TO.png 2x"
@@ -922,7 +922,7 @@ exports[`Storyshots CarrierLogo Three carriers 1`] = `
             />
             <img
               alt="Vueling"
-              className="CarrierLogo__StyledImage-fRYacf flhyId"
+              className="CarrierLogo__StyledImage-fRYacf fVxKRf"
               size="large"
               src="//images.kiwi.com/airlines/16/VY.png"
               srcSet="//images.kiwi.com/airlines/32/VY.png 2x"
@@ -1365,12 +1365,12 @@ exports[`Storyshots CarrierLogo Two carriers 1`] = `
           }
         >
           <div
-            className="CarrierLogo__StyledCarrierLogo-ieqjqT fbkNwD"
+            className="CarrierLogo__StyledCarrierLogo-ieqjqT kdHNuo"
             size="large"
           >
             <img
               alt="Ryanair"
-              className="CarrierLogo__StyledImage-fRYacf flhyId"
+              className="CarrierLogo__StyledImage-fRYacf hrnspD"
               size="large"
               src="//images.kiwi.com/airlines/16/FR.png"
               srcSet="//images.kiwi.com/airlines/32/FR.png 2x"
@@ -1378,7 +1378,7 @@ exports[`Storyshots CarrierLogo Two carriers 1`] = `
             />
             <img
               alt="Transavia France"
-              className="CarrierLogo__StyledImage-fRYacf flhyId"
+              className="CarrierLogo__StyledImage-fRYacf hrnspD"
               size="large"
               src="//images.kiwi.com/airlines/16/TO.png"
               srcSet="//images.kiwi.com/airlines/32/TO.png 2x"
