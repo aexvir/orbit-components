@@ -6,6 +6,8 @@ import chaptersAddon from "react-storybook-addon-chapters";
 import { withKnobs, object, select } from "@storybook/addon-knobs/react";
 import styles from "@sambego/storybook-styles/dist/index";
 
+import ThemeProvider from "../Theming/ThemeProvider";
+
 import CarrierLogo from "./index";
 
 setAddon(chaptersAddon);
@@ -46,7 +48,11 @@ storiesOf("CarrierLogo", module)
         {
           sections: [
             {
-              sectionFn: () => <CarrierLogo size={size} carriers={carriersObject} />,
+              sectionFn: () => (
+                <ThemeProvider>
+                  <CarrierLogo size={size} carriers={carriersObject} />
+                </ThemeProvider>
+              ),
               options,
             },
           ],
@@ -66,7 +72,11 @@ storiesOf("CarrierLogo", module)
         {
           sections: [
             {
-              sectionFn: () => <CarrierLogo carriers={carriersObject} />,
+              sectionFn: () => (
+                <ThemeProvider>
+                  <CarrierLogo carriers={carriersObject} />
+                </ThemeProvider>
+              ),
               options,
             },
           ],
@@ -90,7 +100,11 @@ storiesOf("CarrierLogo", module)
         {
           sections: [
             {
-              sectionFn: () => <CarrierLogo carriers={carriersObject} />,
+              sectionFn: () => (
+                <ThemeProvider>
+                  <CarrierLogo carriers={carriersObject} />
+                </ThemeProvider>
+              ),
               options,
             },
           ],
@@ -115,7 +129,11 @@ storiesOf("CarrierLogo", module)
         {
           sections: [
             {
-              sectionFn: () => <CarrierLogo carriers={carriersObject} />,
+              sectionFn: () => (
+                <ThemeProvider>
+                  <CarrierLogo carriers={carriersObject} />
+                </ThemeProvider>
+              ),
               options,
             },
           ],

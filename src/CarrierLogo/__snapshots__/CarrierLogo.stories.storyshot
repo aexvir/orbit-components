@@ -99,32 +99,37 @@ exports[`Storyshots CarrierLogo Four carriers 1`] = `
           }
         >
           <div
-            className="jsx-3959991045"
+            className="CarrierLogo__StyledCarrierLogo-ieqjqT fbkNwD"
+            size="large"
           >
             <img
               alt="Ryanair"
-              className="jsx-3959991045"
+              className="CarrierLogo__StyledImage-fRYacf flhyId"
+              size="large"
               src="//images.kiwi.com/airlines/16/FR.png"
               srcSet="//images.kiwi.com/airlines/32/FR.png 2x"
               title="Ryanair"
             />
             <img
               alt="Transavia France"
-              className="jsx-3959991045"
+              className="CarrierLogo__StyledImage-fRYacf flhyId"
+              size="large"
               src="//images.kiwi.com/airlines/16/TO.png"
               srcSet="//images.kiwi.com/airlines/32/TO.png 2x"
               title="Transavia France"
             />
             <img
               alt="Vueling"
-              className="jsx-3959991045"
+              className="CarrierLogo__StyledImage-fRYacf flhyId"
+              size="large"
               src="//images.kiwi.com/airlines/16/VY.png"
               srcSet="//images.kiwi.com/airlines/32/VY.png 2x"
               title="Vueling"
             />
             <img
               alt="Czech Airlines"
-              className="jsx-3959991045"
+              className="CarrierLogo__StyledImage-fRYacf flhyId"
+              size="large"
               src="//images.kiwi.com/airlines/16/OK.png"
               srcSet="//images.kiwi.com/airlines/32/OK.png 2x"
               title="Czech Airlines"
@@ -166,246 +171,297 @@ exports[`Storyshots CarrierLogo Four carriers 1`] = `
                     }
                   }
                 >
-                  <div
-                    style={
-                      Object {
-                        "paddingLeft": 18,
-                        "paddingRight": 3,
-                      }
-                    }
-                  >
-                    <span
+                  <div>
+                    <div
                       style={
                         Object {
-                          "color": "#777",
+                          "paddingLeft": 18,
+                          "paddingRight": 3,
                         }
                       }
                     >
-                      &lt;
-                      CarrierLogo
-                    </span>
-                    <span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#777",
+                          }
+                        }
+                      >
+                        &lt;
+                        ThemeProvider
+                      </span>
+                      <span />
+                      <span
+                        style={
+                          Object {
+                            "color": "#777",
+                          }
+                        }
+                      >
+                        &gt;
+                      </span>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "paddingLeft": 33,
+                          "paddingRight": 3,
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#777",
+                          }
+                        }
+                      >
+                        &lt;
+                        CarrierLogo
+                      </span>
                       <span>
-                         
-                        <span
-                          style={Object {}}
-                        >
-                          carriers
-                        </span>
                         <span>
-                          =
+                           
                           <span
                             style={Object {}}
                           >
-                            <span>
-                              {
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#666",
+                            carriers
+                          </span>
+                          <span>
+                            =
+                            <span
+                              style={Object {}}
+                            >
+                              <span>
+                                {
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#666",
+                                    }
                                   }
+                                >
+                                  [
+                                  <span>
+                                    {
+                                    <span
+                                      style={
+                                        Object {
+                                          "color": "#666",
+                                        }
+                                      }
+                                    >
+                                      {
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#666",
+                                          }
+                                        }
+                                      >
+                                        code
+                                      </span>
+                                      : 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#22a",
+                                            "wordBreak": "break-word",
+                                          }
+                                        }
+                                      >
+                                        "
+                                        FR
+                                        "
+                                      </span>
+                                      , 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#666",
+                                          }
+                                        }
+                                      >
+                                        name
+                                      </span>
+                                      : 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#22a",
+                                            "wordBreak": "break-word",
+                                          }
+                                        }
+                                      >
+                                        "
+                                        Ryanair
+                                        "
+                                      </span>
+                                      }
+                                    </span>
+                                    }
+                                  </span>
+                                  , 
+                                  <span>
+                                    {
+                                    <span
+                                      style={
+                                        Object {
+                                          "color": "#666",
+                                        }
+                                      }
+                                    >
+                                      {
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#666",
+                                          }
+                                        }
+                                      >
+                                        code
+                                      </span>
+                                      : 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#22a",
+                                            "wordBreak": "break-word",
+                                          }
+                                        }
+                                      >
+                                        "
+                                        TO
+                                        "
+                                      </span>
+                                      , 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#666",
+                                          }
+                                        }
+                                      >
+                                        name
+                                      </span>
+                                      : 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#22a",
+                                            "wordBreak": "break-word",
+                                          }
+                                        }
+                                      >
+                                        "
+                                        Transavia France
+                                        "
+                                      </span>
+                                      }
+                                    </span>
+                                    }
+                                  </span>
+                                  , 
+                                  <span>
+                                    {
+                                    <span
+                                      style={
+                                        Object {
+                                          "color": "#666",
+                                        }
+                                      }
+                                    >
+                                      {
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#666",
+                                          }
+                                        }
+                                      >
+                                        code
+                                      </span>
+                                      : 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#22a",
+                                            "wordBreak": "break-word",
+                                          }
+                                        }
+                                      >
+                                        "
+                                        VY
+                                        "
+                                      </span>
+                                      , 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#666",
+                                          }
+                                        }
+                                      >
+                                        name
+                                      </span>
+                                      : 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#22a",
+                                            "wordBreak": "break-word",
+                                          }
+                                        }
+                                      >
+                                        "
+                                        Vueling
+                                        "
+                                      </span>
+                                      }
+                                    </span>
+                                    }
+                                  </span>
+                                  , 
+                                  …
+                                  ]
+                                </span>
                                 }
-                              >
-                                [
-                                <span>
-                                  {
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#666",
-                                      }
-                                    }
-                                  >
-                                    {
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      code
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#22a",
-                                          "wordBreak": "break-word",
-                                        }
-                                      }
-                                    >
-                                      "
-                                      FR
-                                      "
-                                    </span>
-                                    , 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      name
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#22a",
-                                          "wordBreak": "break-word",
-                                        }
-                                      }
-                                    >
-                                      "
-                                      Ryanair
-                                      "
-                                    </span>
-                                    }
-                                  </span>
-                                  }
-                                </span>
-                                , 
-                                <span>
-                                  {
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#666",
-                                      }
-                                    }
-                                  >
-                                    {
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      code
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#22a",
-                                          "wordBreak": "break-word",
-                                        }
-                                      }
-                                    >
-                                      "
-                                      TO
-                                      "
-                                    </span>
-                                    , 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      name
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#22a",
-                                          "wordBreak": "break-word",
-                                        }
-                                      }
-                                    >
-                                      "
-                                      Transavia France
-                                      "
-                                    </span>
-                                    }
-                                  </span>
-                                  }
-                                </span>
-                                , 
-                                <span>
-                                  {
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#666",
-                                      }
-                                    }
-                                  >
-                                    {
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      code
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#22a",
-                                          "wordBreak": "break-word",
-                                        }
-                                      }
-                                    >
-                                      "
-                                      VY
-                                      "
-                                    </span>
-                                    , 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      name
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#22a",
-                                          "wordBreak": "break-word",
-                                        }
-                                      }
-                                    >
-                                      "
-                                      Vueling
-                                      "
-                                    </span>
-                                    }
-                                  </span>
-                                  }
-                                </span>
-                                , 
-                                …
-                                ]
                               </span>
-                              }
                             </span>
                           </span>
+                           
                         </span>
-                         
                       </span>
-                    </span>
-                    <span
+                      <span
+                        style={
+                          Object {
+                            "color": "#777",
+                          }
+                        }
+                      >
+                        /&gt;
+                      </span>
+                    </div>
+                    <div
                       style={
                         Object {
-                          "color": "#777",
+                          "paddingLeft": 18,
+                          "paddingRight": 3,
                         }
                       }
                     >
-                      /&gt;
-                    </span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#777",
+                          }
+                        }
+                      >
+                        &lt;/
+                        ThemeProvider
+                        &gt;
+                      </span>
+                    </div>
                   </div>
                 </pre>
               </div>
@@ -517,11 +573,13 @@ exports[`Storyshots CarrierLogo One carrier 1`] = `
           }
         >
           <div
-            className="jsx-1883173957"
+            className="CarrierLogo__StyledCarrierLogo-ieqjqT fbkNwD"
+            size="large"
           >
             <img
               alt="Ryanair"
-              className="jsx-1883173957"
+              className="CarrierLogo__StyledImage-fRYacf cYWhRr"
+              size="large"
               src="//images.kiwi.com/airlines/32/FR.png"
               srcSet="//images.kiwi.com/airlines/64/FR.png 2x"
               title="Ryanair"
@@ -563,56 +621,78 @@ exports[`Storyshots CarrierLogo One carrier 1`] = `
                     }
                   }
                 >
-                  <div
-                    style={
-                      Object {
-                        "paddingLeft": 18,
-                        "paddingRight": 3,
-                      }
-                    }
-                  >
-                    <span
+                  <div>
+                    <div
                       style={
                         Object {
-                          "color": "#777",
+                          "paddingLeft": 18,
+                          "paddingRight": 3,
                         }
                       }
                     >
-                      &lt;
-                      CarrierLogo
-                    </span>
-                    <span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#777",
+                          }
+                        }
+                      >
+                        &lt;
+                        ThemeProvider
+                      </span>
+                      <span />
+                      <span
+                        style={
+                          Object {
+                            "color": "#777",
+                          }
+                        }
+                      >
+                        &gt;
+                      </span>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "paddingLeft": 33,
+                          "paddingRight": 3,
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#777",
+                          }
+                        }
+                      >
+                        &lt;
+                        CarrierLogo
+                      </span>
                       <span>
-                         
-                        <span
-                          style={Object {}}
-                        >
-                          carriers
-                        </span>
                         <span>
-                          =
+                           
                           <span
                             style={Object {}}
                           >
-                            <span>
-                              {
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#666",
-                                  }
-                                }
-                              >
-                                [
-                                <span>
-                                  {
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#666",
-                                      }
+                            carriers
+                          </span>
+                          <span>
+                            =
+                            <span
+                              style={Object {}}
+                            >
+                              <span>
+                                {
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#666",
                                     }
-                                  >
+                                  }
+                                >
+                                  [
+                                  <span>
                                     {
                                     <span
                                       style={
@@ -621,66 +701,95 @@ exports[`Storyshots CarrierLogo One carrier 1`] = `
                                         }
                                       }
                                     >
-                                      code
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#22a",
-                                          "wordBreak": "break-word",
+                                      {
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#666",
+                                          }
                                         }
-                                      }
-                                    >
-                                      "
-                                      FR
-                                      "
-                                    </span>
-                                    , 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
+                                      >
+                                        code
+                                      </span>
+                                      : 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#22a",
+                                            "wordBreak": "break-word",
+                                          }
                                         }
-                                      }
-                                    >
-                                      name
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#22a",
-                                          "wordBreak": "break-word",
+                                      >
+                                        "
+                                        FR
+                                        "
+                                      </span>
+                                      , 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#666",
+                                          }
                                         }
+                                      >
+                                        name
+                                      </span>
+                                      : 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#22a",
+                                            "wordBreak": "break-word",
+                                          }
+                                        }
+                                      >
+                                        "
+                                        Ryanair
+                                        "
+                                      </span>
                                       }
-                                    >
-                                      "
-                                      Ryanair
-                                      "
                                     </span>
                                     }
                                   </span>
-                                  }
+                                  ]
                                 </span>
-                                ]
+                                }
                               </span>
-                              }
                             </span>
                           </span>
+                           
                         </span>
-                         
                       </span>
-                    </span>
-                    <span
+                      <span
+                        style={
+                          Object {
+                            "color": "#777",
+                          }
+                        }
+                      >
+                        /&gt;
+                      </span>
+                    </div>
+                    <div
                       style={
                         Object {
-                          "color": "#777",
+                          "paddingLeft": 18,
+                          "paddingRight": 3,
                         }
                       }
                     >
-                      /&gt;
-                    </span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#777",
+                          }
+                        }
+                      >
+                        &lt;/
+                        ThemeProvider
+                        &gt;
+                      </span>
+                    </div>
                   </div>
                 </pre>
               </div>
@@ -792,25 +901,29 @@ exports[`Storyshots CarrierLogo Three carriers 1`] = `
           }
         >
           <div
-            className="jsx-3959991045"
+            className="CarrierLogo__StyledCarrierLogo-ieqjqT fbkNwD"
+            size="large"
           >
             <img
               alt="Ryanair"
-              className="jsx-3959991045"
+              className="CarrierLogo__StyledImage-fRYacf flhyId"
+              size="large"
               src="//images.kiwi.com/airlines/16/FR.png"
               srcSet="//images.kiwi.com/airlines/32/FR.png 2x"
               title="Ryanair"
             />
             <img
               alt="Transavia France"
-              className="jsx-3959991045"
+              className="CarrierLogo__StyledImage-fRYacf flhyId"
+              size="large"
               src="//images.kiwi.com/airlines/16/TO.png"
               srcSet="//images.kiwi.com/airlines/32/TO.png 2x"
               title="Transavia France"
             />
             <img
               alt="Vueling"
-              className="jsx-3959991045"
+              className="CarrierLogo__StyledImage-fRYacf flhyId"
+              size="large"
               src="//images.kiwi.com/airlines/16/VY.png"
               srcSet="//images.kiwi.com/airlines/32/VY.png 2x"
               title="Vueling"
@@ -852,244 +965,295 @@ exports[`Storyshots CarrierLogo Three carriers 1`] = `
                     }
                   }
                 >
-                  <div
-                    style={
-                      Object {
-                        "paddingLeft": 18,
-                        "paddingRight": 3,
-                      }
-                    }
-                  >
-                    <span
+                  <div>
+                    <div
                       style={
                         Object {
-                          "color": "#777",
+                          "paddingLeft": 18,
+                          "paddingRight": 3,
                         }
                       }
                     >
-                      &lt;
-                      CarrierLogo
-                    </span>
-                    <span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#777",
+                          }
+                        }
+                      >
+                        &lt;
+                        ThemeProvider
+                      </span>
+                      <span />
+                      <span
+                        style={
+                          Object {
+                            "color": "#777",
+                          }
+                        }
+                      >
+                        &gt;
+                      </span>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "paddingLeft": 33,
+                          "paddingRight": 3,
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#777",
+                          }
+                        }
+                      >
+                        &lt;
+                        CarrierLogo
+                      </span>
                       <span>
-                         
-                        <span
-                          style={Object {}}
-                        >
-                          carriers
-                        </span>
                         <span>
-                          =
+                           
                           <span
                             style={Object {}}
                           >
-                            <span>
-                              {
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#666",
+                            carriers
+                          </span>
+                          <span>
+                            =
+                            <span
+                              style={Object {}}
+                            >
+                              <span>
+                                {
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#666",
+                                    }
                                   }
+                                >
+                                  [
+                                  <span>
+                                    {
+                                    <span
+                                      style={
+                                        Object {
+                                          "color": "#666",
+                                        }
+                                      }
+                                    >
+                                      {
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#666",
+                                          }
+                                        }
+                                      >
+                                        code
+                                      </span>
+                                      : 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#22a",
+                                            "wordBreak": "break-word",
+                                          }
+                                        }
+                                      >
+                                        "
+                                        FR
+                                        "
+                                      </span>
+                                      , 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#666",
+                                          }
+                                        }
+                                      >
+                                        name
+                                      </span>
+                                      : 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#22a",
+                                            "wordBreak": "break-word",
+                                          }
+                                        }
+                                      >
+                                        "
+                                        Ryanair
+                                        "
+                                      </span>
+                                      }
+                                    </span>
+                                    }
+                                  </span>
+                                  , 
+                                  <span>
+                                    {
+                                    <span
+                                      style={
+                                        Object {
+                                          "color": "#666",
+                                        }
+                                      }
+                                    >
+                                      {
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#666",
+                                          }
+                                        }
+                                      >
+                                        code
+                                      </span>
+                                      : 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#22a",
+                                            "wordBreak": "break-word",
+                                          }
+                                        }
+                                      >
+                                        "
+                                        TO
+                                        "
+                                      </span>
+                                      , 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#666",
+                                          }
+                                        }
+                                      >
+                                        name
+                                      </span>
+                                      : 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#22a",
+                                            "wordBreak": "break-word",
+                                          }
+                                        }
+                                      >
+                                        "
+                                        Transavia France
+                                        "
+                                      </span>
+                                      }
+                                    </span>
+                                    }
+                                  </span>
+                                  , 
+                                  <span>
+                                    {
+                                    <span
+                                      style={
+                                        Object {
+                                          "color": "#666",
+                                        }
+                                      }
+                                    >
+                                      {
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#666",
+                                          }
+                                        }
+                                      >
+                                        code
+                                      </span>
+                                      : 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#22a",
+                                            "wordBreak": "break-word",
+                                          }
+                                        }
+                                      >
+                                        "
+                                        VY
+                                        "
+                                      </span>
+                                      , 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#666",
+                                          }
+                                        }
+                                      >
+                                        name
+                                      </span>
+                                      : 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#22a",
+                                            "wordBreak": "break-word",
+                                          }
+                                        }
+                                      >
+                                        "
+                                        Vueling
+                                        "
+                                      </span>
+                                      }
+                                    </span>
+                                    }
+                                  </span>
+                                  ]
+                                </span>
                                 }
-                              >
-                                [
-                                <span>
-                                  {
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#666",
-                                      }
-                                    }
-                                  >
-                                    {
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      code
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#22a",
-                                          "wordBreak": "break-word",
-                                        }
-                                      }
-                                    >
-                                      "
-                                      FR
-                                      "
-                                    </span>
-                                    , 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      name
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#22a",
-                                          "wordBreak": "break-word",
-                                        }
-                                      }
-                                    >
-                                      "
-                                      Ryanair
-                                      "
-                                    </span>
-                                    }
-                                  </span>
-                                  }
-                                </span>
-                                , 
-                                <span>
-                                  {
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#666",
-                                      }
-                                    }
-                                  >
-                                    {
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      code
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#22a",
-                                          "wordBreak": "break-word",
-                                        }
-                                      }
-                                    >
-                                      "
-                                      TO
-                                      "
-                                    </span>
-                                    , 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      name
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#22a",
-                                          "wordBreak": "break-word",
-                                        }
-                                      }
-                                    >
-                                      "
-                                      Transavia France
-                                      "
-                                    </span>
-                                    }
-                                  </span>
-                                  }
-                                </span>
-                                , 
-                                <span>
-                                  {
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#666",
-                                      }
-                                    }
-                                  >
-                                    {
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      code
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#22a",
-                                          "wordBreak": "break-word",
-                                        }
-                                      }
-                                    >
-                                      "
-                                      VY
-                                      "
-                                    </span>
-                                    , 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      name
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#22a",
-                                          "wordBreak": "break-word",
-                                        }
-                                      }
-                                    >
-                                      "
-                                      Vueling
-                                      "
-                                    </span>
-                                    }
-                                  </span>
-                                  }
-                                </span>
-                                ]
                               </span>
-                              }
                             </span>
                           </span>
+                           
                         </span>
-                         
                       </span>
-                    </span>
-                    <span
+                      <span
+                        style={
+                          Object {
+                            "color": "#777",
+                          }
+                        }
+                      >
+                        /&gt;
+                      </span>
+                    </div>
+                    <div
                       style={
                         Object {
-                          "color": "#777",
+                          "paddingLeft": 18,
+                          "paddingRight": 3,
                         }
                       }
                     >
-                      /&gt;
-                    </span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#777",
+                          }
+                        }
+                      >
+                        &lt;/
+                        ThemeProvider
+                        &gt;
+                      </span>
+                    </div>
                   </div>
                 </pre>
               </div>
@@ -1201,18 +1365,21 @@ exports[`Storyshots CarrierLogo Two carriers 1`] = `
           }
         >
           <div
-            className="jsx-3959991045"
+            className="CarrierLogo__StyledCarrierLogo-ieqjqT fbkNwD"
+            size="large"
           >
             <img
               alt="Ryanair"
-              className="jsx-3959991045"
+              className="CarrierLogo__StyledImage-fRYacf flhyId"
+              size="large"
               src="//images.kiwi.com/airlines/16/FR.png"
               srcSet="//images.kiwi.com/airlines/32/FR.png 2x"
               title="Ryanair"
             />
             <img
               alt="Transavia France"
-              className="jsx-3959991045"
+              className="CarrierLogo__StyledImage-fRYacf flhyId"
+              size="large"
               src="//images.kiwi.com/airlines/16/TO.png"
               srcSet="//images.kiwi.com/airlines/32/TO.png 2x"
               title="Transavia France"
@@ -1254,184 +1421,235 @@ exports[`Storyshots CarrierLogo Two carriers 1`] = `
                     }
                   }
                 >
-                  <div
-                    style={
-                      Object {
-                        "paddingLeft": 18,
-                        "paddingRight": 3,
-                      }
-                    }
-                  >
-                    <span
+                  <div>
+                    <div
                       style={
                         Object {
-                          "color": "#777",
+                          "paddingLeft": 18,
+                          "paddingRight": 3,
                         }
                       }
                     >
-                      &lt;
-                      CarrierLogo
-                    </span>
-                    <span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#777",
+                          }
+                        }
+                      >
+                        &lt;
+                        ThemeProvider
+                      </span>
+                      <span />
+                      <span
+                        style={
+                          Object {
+                            "color": "#777",
+                          }
+                        }
+                      >
+                        &gt;
+                      </span>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "paddingLeft": 33,
+                          "paddingRight": 3,
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#777",
+                          }
+                        }
+                      >
+                        &lt;
+                        CarrierLogo
+                      </span>
                       <span>
-                         
-                        <span
-                          style={Object {}}
-                        >
-                          carriers
-                        </span>
                         <span>
-                          =
+                           
                           <span
                             style={Object {}}
                           >
-                            <span>
-                              {
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#666",
+                            carriers
+                          </span>
+                          <span>
+                            =
+                            <span
+                              style={Object {}}
+                            >
+                              <span>
+                                {
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#666",
+                                    }
                                   }
+                                >
+                                  [
+                                  <span>
+                                    {
+                                    <span
+                                      style={
+                                        Object {
+                                          "color": "#666",
+                                        }
+                                      }
+                                    >
+                                      {
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#666",
+                                          }
+                                        }
+                                      >
+                                        code
+                                      </span>
+                                      : 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#22a",
+                                            "wordBreak": "break-word",
+                                          }
+                                        }
+                                      >
+                                        "
+                                        FR
+                                        "
+                                      </span>
+                                      , 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#666",
+                                          }
+                                        }
+                                      >
+                                        name
+                                      </span>
+                                      : 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#22a",
+                                            "wordBreak": "break-word",
+                                          }
+                                        }
+                                      >
+                                        "
+                                        Ryanair
+                                        "
+                                      </span>
+                                      }
+                                    </span>
+                                    }
+                                  </span>
+                                  , 
+                                  <span>
+                                    {
+                                    <span
+                                      style={
+                                        Object {
+                                          "color": "#666",
+                                        }
+                                      }
+                                    >
+                                      {
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#666",
+                                          }
+                                        }
+                                      >
+                                        code
+                                      </span>
+                                      : 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#22a",
+                                            "wordBreak": "break-word",
+                                          }
+                                        }
+                                      >
+                                        "
+                                        TO
+                                        "
+                                      </span>
+                                      , 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#666",
+                                          }
+                                        }
+                                      >
+                                        name
+                                      </span>
+                                      : 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#22a",
+                                            "wordBreak": "break-word",
+                                          }
+                                        }
+                                      >
+                                        "
+                                        Transavia France
+                                        "
+                                      </span>
+                                      }
+                                    </span>
+                                    }
+                                  </span>
+                                  ]
+                                </span>
                                 }
-                              >
-                                [
-                                <span>
-                                  {
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#666",
-                                      }
-                                    }
-                                  >
-                                    {
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      code
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#22a",
-                                          "wordBreak": "break-word",
-                                        }
-                                      }
-                                    >
-                                      "
-                                      FR
-                                      "
-                                    </span>
-                                    , 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      name
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#22a",
-                                          "wordBreak": "break-word",
-                                        }
-                                      }
-                                    >
-                                      "
-                                      Ryanair
-                                      "
-                                    </span>
-                                    }
-                                  </span>
-                                  }
-                                </span>
-                                , 
-                                <span>
-                                  {
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#666",
-                                      }
-                                    }
-                                  >
-                                    {
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      code
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#22a",
-                                          "wordBreak": "break-word",
-                                        }
-                                      }
-                                    >
-                                      "
-                                      TO
-                                      "
-                                    </span>
-                                    , 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      name
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#22a",
-                                          "wordBreak": "break-word",
-                                        }
-                                      }
-                                    >
-                                      "
-                                      Transavia France
-                                      "
-                                    </span>
-                                    }
-                                  </span>
-                                  }
-                                </span>
-                                ]
                               </span>
-                              }
                             </span>
                           </span>
+                           
                         </span>
-                         
                       </span>
-                    </span>
-                    <span
+                      <span
+                        style={
+                          Object {
+                            "color": "#777",
+                          }
+                        }
+                      >
+                        /&gt;
+                      </span>
+                    </div>
+                    <div
                       style={
                         Object {
-                          "color": "#777",
+                          "paddingLeft": 18,
+                          "paddingRight": 3,
                         }
                       }
                     >
-                      /&gt;
-                    </span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#777",
+                          }
+                        }
+                      >
+                        &lt;/
+                        ThemeProvider
+                        &gt;
+                      </span>
+                    </div>
                   </div>
                 </pre>
               </div>
