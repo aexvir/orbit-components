@@ -101,30 +101,12 @@ exports[`Storyshots Card Card with content 1`] = `
         >
           <div
             className="Card__StyledCard-fdVXSH kOwYZz"
-            icon={
-              <Airplane
-                color="attention"
-              />
-            }
-            title="Card with content"
           >
             <div
               className="Card__StyledCardHeader-vNWFG kOgfNl"
-              icon={
-                <Airplane
-                  color="attention"
-                />
-              }
-              title="Card with content"
             >
               <div
                 className="Card__HeadingContainer-drapPY cSDnTp"
-                icon={
-                  <Airplane
-                    color="attention"
-                  />
-                }
-                title="Card with content"
               >
                 <div
                   className="Card__IconContainer-glrudE inrtTD"
@@ -160,13 +142,7 @@ exports[`Storyshots Card Card with content 1`] = `
               </p>
             </div>
             <div
-              className="Card__StyledCardBody-cIlKnW hXSri"
-              icon={
-                <Airplane
-                  color="attention"
-                />
-              }
-              title="Card with content"
+              className="Card__StyledCardBody-cIlKnW gTOvAd"
             >
               <h3
                 className="Heading__StyledHeading-gucmUp iPRwMQ"
@@ -708,30 +684,12 @@ exports[`Storyshots Card Card with description 1`] = `
         >
           <div
             className="Card__StyledCard-fdVXSH kOwYZz"
-            icon={
-              <Airplane
-                color="attention"
-              />
-            }
-            title="Card with title & description"
           >
             <div
               className="Card__StyledCardHeader-vNWFG kOgfNl"
-              icon={
-                <Airplane
-                  color="attention"
-                />
-              }
-              title="Card with title & description"
             >
               <div
                 className="Card__HeadingContainer-drapPY cSDnTp"
-                icon={
-                  <Airplane
-                    color="attention"
-                  />
-                }
-                title="Card with title & description"
               >
                 <div
                   className="Card__IconContainer-glrudE inrtTD"
@@ -1079,30 +1037,12 @@ exports[`Storyshots Card Card with sections 1`] = `
         >
           <div
             className="Card__StyledCard-fdVXSH kOwYZz"
-            icon={
-              <Airplane
-                color="attention"
-              />
-            }
-            title="Card with sections"
           >
             <div
               className="Card__StyledCardHeader-vNWFG kOgfNl"
-              icon={
-                <Airplane
-                  color="attention"
-                />
-              }
-              title="Card with sections"
             >
               <div
                 className="Card__HeadingContainer-drapPY cSDnTp"
-                icon={
-                  <Airplane
-                    color="attention"
-                  />
-                }
-                title="Card with sections"
               >
                 <div
                   className="Card__IconContainer-glrudE inrtTD"
@@ -1138,16 +1078,10 @@ exports[`Storyshots Card Card with sections 1`] = `
               </p>
             </div>
             <div
-              className="Card__StyledCardBody-cIlKnW dznlkA"
-              icon={
-                <Airplane
-                  color="attention"
-                />
-              }
-              title="Card with sections"
+              className="Card__StyledCardBody-cIlKnW iNTzzs"
             >
               <div
-                className="CardSection__StyledCardSection-jTZsPt kdlPLk"
+                className="Section__StyledSection-isbbuJ aLEXr"
               >
                 <h3
                   className="Heading__StyledHeading-gucmUp iPRwMQ"
@@ -1161,7 +1095,7 @@ exports[`Storyshots Card Card with sections 1`] = `
                 </p>
               </div>
               <div
-                className="CardSection__StyledCardSection-jTZsPt kdlPLk"
+                className="Section__StyledSection-isbbuJ aLEXr"
               >
                 <h3
                   className="Heading__StyledHeading-gucmUp iPRwMQ"
@@ -1175,7 +1109,7 @@ exports[`Storyshots Card Card with sections 1`] = `
                 </p>
               </div>
               <div
-                className="CardSection__StyledCardSection-jTZsPt kdlPLk"
+                className="Section__StyledSection-isbbuJ aLEXr"
               >
                 <h3
                   className="Heading__StyledHeading-gucmUp iPRwMQ"
@@ -1407,7 +1341,7 @@ exports[`Storyshots Card Card with sections 1`] = `
                             }
                           >
                             &lt;
-                            CardSection
+                            Card.Section
                           </span>
                           <span />
                           <span
@@ -1630,7 +1564,7 @@ exports[`Storyshots Card Card with sections 1`] = `
                             }
                           >
                             &lt;/
-                            CardSection
+                            Card.Section
                             &gt;
                           </span>
                         </div>
@@ -1652,7 +1586,7 @@ exports[`Storyshots Card Card with sections 1`] = `
                             }
                           >
                             &lt;
-                            CardSection
+                            Card.Section
                           </span>
                           <span />
                           <span
@@ -1875,7 +1809,7 @@ exports[`Storyshots Card Card with sections 1`] = `
                             }
                           >
                             &lt;/
-                            CardSection
+                            Card.Section
                             &gt;
                           </span>
                         </div>
@@ -1897,7 +1831,7 @@ exports[`Storyshots Card Card with sections 1`] = `
                             }
                           >
                             &lt;
-                            CardSection
+                            Card.Section
                           </span>
                           <span />
                           <span
@@ -2120,7 +2054,7 @@ exports[`Storyshots Card Card with sections 1`] = `
                             }
                           >
                             &lt;/
-                            CardSection
+                            Card.Section
                             &gt;
                           </span>
                         </div>
@@ -2279,30 +2213,12 @@ exports[`Storyshots Card Default 1`] = `
         >
           <div
             className="Card__StyledCard-fdVXSH kOwYZz"
-            icon={
-              <Airplane
-                color="attention"
-              />
-            }
-            title="Card with title"
           >
             <div
               className="Card__StyledCardHeader-vNWFG kOgfNl"
-              icon={
-                <Airplane
-                  color="attention"
-                />
-              }
-              title="Card with title"
             >
               <div
                 className="Card__HeadingContainer-drapPY ggXmvo"
-                icon={
-                  <Airplane
-                    color="attention"
-                  />
-                }
-                title="Card with title"
               >
                 <div
                   className="Card__IconContainer-glrudE inrtTD"
@@ -2618,30 +2534,12 @@ exports[`Storyshots Card Playground 1`] = `
         >
           <div
             className="Card__StyledCard-fdVXSH kOwYZz"
-            icon={
-              <Airplane
-                color="attention"
-              />
-            }
-            title="Customisable card title"
           >
             <div
               className="Card__StyledCardHeader-vNWFG kOgfNl"
-              icon={
-                <Airplane
-                  color="attention"
-                />
-              }
-              title="Customisable card title"
             >
               <div
                 className="Card__HeadingContainer-drapPY cSDnTp"
-                icon={
-                  <Airplane
-                    color="attention"
-                  />
-                }
-                title="Customisable card title"
               >
                 <div
                   className="Card__IconContainer-glrudE inrtTD"

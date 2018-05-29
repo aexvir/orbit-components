@@ -9,7 +9,6 @@ import { withKnobs, text, boolean, select } from "@storybook/addon-knobs/react";
 
 import ThemeProvider from "../Theming/ThemeProvider";
 import * as Icons from "../icons";
-import CardSection from "./CardSection";
 import Heading from "../Heading";
 import Text from "../Text";
 
@@ -104,24 +103,24 @@ storiesOf("Card", module)
                     description={description}
                     sectioned
                   >
-                    <CardSection>
+                    <Card.Section>
                       <Heading type="title3" element="h3">
                         Insert your title here...
                       </Heading>
                       <Text>Insert your content here...</Text>
-                    </CardSection>
-                    <CardSection>
+                    </Card.Section>
+                    <Card.Section>
                       <Heading type="title3" element="h3">
                         Insert your title here...
                       </Heading>
                       <Text>Insert your content here...</Text>
-                    </CardSection>
-                    <CardSection>
+                    </Card.Section>
+                    <Card.Section>
                       <Heading type="title3" element="h3">
                         Insert your title here...
                       </Heading>
                       <Text>Insert your content here...</Text>
-                    </CardSection>
+                    </Card.Section>
                   </Card>
                 </ThemeProvider>
               ),

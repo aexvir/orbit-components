@@ -3,7 +3,7 @@ import * as React from "react";
 import { shallow } from "enzyme";
 
 import Card from "../index";
-import CardSection from "../CardSection";
+import CardSection from "../Section";
 import Heading from "../../Heading";
 import Text from "../../Text";
 import ThemeProvider from "../../Theming/ThemeProvider";
