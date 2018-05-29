@@ -106,9 +106,9 @@
     lodash "^4.17.5"
     to-fast-properties "^2.0.0"
 
-"@kiwicom/orbit-design-tokens@^0.0.8":
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/@kiwicom/orbit-design-tokens/-/orbit-design-tokens-0.0.8.tgz#fcea71e3b80b6a67bb2185195f009a5cb22a0775"
+"@kiwicom/orbit-design-tokens@^0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@kiwicom/orbit-design-tokens/-/orbit-design-tokens-0.0.12.tgz#8d4a8aa3a67016682e00df8f5ccf9cf5d218fe60"
 
 "@sambego/storybook-styles@^1.0.0":
   version "1.0.0"
